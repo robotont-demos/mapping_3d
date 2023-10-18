@@ -13,7 +13,7 @@
   <arg name="angular_update" default="0.01"/>
   <arg name="cell_size" default="0.01"/>  
 
-  <node ns="rtabmap" name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
+  <node ns="rtabmap" name="rtabmap" pkg="rtabmap_slam" type="rtabmap" output="screen" args="--delete_db_on_start">
     <param name="frame_id" type="string" value="$(arg prefix)base_footprint"/>
     <param name="odom_frame_id" type="string" value="$(arg prefix)odom"/>
     <param name="subscribe_depth" type="bool" value="true"/>
